@@ -1,0 +1,1297 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.about-page {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #173b45;
+  background: #ffffff;
+}
+
+.about-page * {
+  box-sizing: border-box;
+}
+
+.about-container,
+.stats-container,
+.mission-vision-container,
+.why-container,
+.team-container {
+  width: 100%;
+  max-width: 1520px;
+  margin: auto;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.about-hero {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #f8fdfc 0%,
+    #f3fbfa 45%,
+    #ffffff 100%
+  );
+}
+
+.about-container {
+  min-height: 395px;
+
+  display: grid;
+  grid-template-columns: 47% 53%;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   HERO LEFT CONTENT
+========================================================= */
+
+.about-hero-content {
+  padding: 35px 35px 35px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* MAIN HEADING */
+
+.about-hero-content h1 {
+  margin: 0;
+  color: #08776d;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.about-hero-content h1 span {
+  font-size: 30px;
+  margin-left: 7px;
+}
+
+
+/* SUB HEADING */
+
+.about-hero-content h2 {
+  margin: 15px 0 15px;
+
+  font-size: 27px;
+  line-height: 1.3;
+
+  color: #173f49;
+
+  font-weight: 700;
+}
+
+
+/* DESCRIPTION */
+
+.about-hero-content p {
+  max-width: 650px;
+
+  margin: 6px 0;
+
+  color: #344d56;
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.about-hero-image {
+  position: relative;
+
+  min-height: 395px;
+
+  overflow: hidden;
+}
+
+.about-hero-image::before {
+  content: "";
+
+  position: absolute;
+
+  z-index: 2;
+
+  left: -80px;
+  top: -20px;
+
+  width: 170px;
+  height: 120%;
+
+  background: #f5fcfb;
+
+  border-radius: 50%;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 395px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================================
+   HERO FEATURES
+========================================================= */
+
+.hero-features {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 22px;
+
+  flex-wrap: wrap;
+}
+
+.hero-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #08776d;
+
+  font-size: 24px;
+}
+
+.hero-feature div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-feature strong {
+  font-size: 14px;
+  color: #183e46;
+}
+
+.hero-feature span {
+  font-size: 12px;
+  color: #52666b;
+}
+
+
+/* =========================================================
+   STATS SECTION
+========================================================= */
+
+.stats-section {
+  padding: 15px 20px;
+
+  background: #ffffff;
+}
+
+.stats-container {
+  min-height: 105px;
+
+  padding: 18px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #f3faf9;
+
+  border-radius: 14px;
+}
+
+.stat-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  flex: 1;
+
+  justify-content: center;
+}
+
+.stat-icon {
+  font-size: 38px;
+
+  color: #087d71;
+
+  stroke-width: 1.6;
+}
+
+.stat-item h3 {
+  margin: 0;
+
+  color: #08776d;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.stat-item p {
+  margin: 4px 0 0;
+
+  color: #263e45;
+
+  font-size: 14px;
+}
+
+.stat-divider {
+  width: 1px;
+
+  height: 45px;
+
+  background: #b5d4d0;
+}
+
+
+/* =========================================================
+   MISSION & VISION
+========================================================= */
+
+.mission-vision-section {
+  padding: 8px 20px 12px;
+}
+
+.mission-vision-container {
+  min-height: 190px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 420px 1fr;
+
+  align-items: stretch;
+
+  background: #f2faf9;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+
+/* MISSION & VISION BOX */
+
+.mission-box,
+.vision-box {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 28px 30px;
+}
+
+
+/* ICON */
+
+.mission-icon,
+.vision-icon {
+  min-width: 68px;
+
+  width: 68px;
+  height: 68px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e0f3f0;
+
+  color: #08776d;
+
+  font-size: 35px;
+}
+
+
+/* HEADING */
+
+.mission-content h3,
+.vision-content h3 {
+  margin: 3px 0 12px;
+
+  font-size: 22px;
+
+  color: #075e59;
+
+  font-weight: 700;
+   text-decoration: underline;
+  text-decoration-color: #087d71;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+
+/* TEXT */
+
+.mission-content p,
+.vision-content p {
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: #304950;
+}
+
+
+/* =========================================================
+   CENTER IMAGE
+========================================================= */
+
+.mission-image {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.mission-image img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 190px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================================
+   WHY CHOOSE AMISHA MEDICOS
+========================================================= */
+
+.why-section {
+  width: 100%;
+
+  padding: 15px 20px 25px;
+}
+
+
+/* HEADING */
+
+.section-heading1 {
+  width: 100%;
+
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+}
+
+
+.section-heading1 h2 {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  color: #075e59;
+
+  font-weight: 700;
+}
+
+.heading-line {
+  width: 105px;
+
+  height: 4px;
+
+  background: #087d71;
+
+  margin-top: 9px;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================================
+   WHY FEATURES
+========================================================= */
+
+.why-container {
+  width: 100%;
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: stretch;
+
+  justify-content: center;
+}
+
+.why-item {
+  flex: 1;
+   position: relative;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  border-radius: 12px;
+  padding: 8px 20px;
+}
+
+.why-item:hover {
+  transform: translateY(-10px);
+  background-color: #f3faf9;
+  box-shadow: 0 8px 20px rgba(8, 125, 113, 0.12);
+}
+
+.why-icon {
+  width: 100%;
+
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #087d71;
+
+  font-size: 36px;
+  transition:
+    transform 0.35s ease,
+    color 0.35s ease;
+}
+
+.why-item:hover .why-icon {
+  transform: scale(1.15);
+  color: #075e59;
+}
+
+.why-item h3 {
+  margin: 8px 0 7px;
+
+  color: #075e59;
+
+  font-size: 17px;
+   transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.why-item:hover h3 {
+  color: #087d71;
+}
+
+.why-item p {
+  max-width: 220px;
+
+  margin: 0 auto;
+
+  color: #304950;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+.why-divider {
+  width: 1px;
+
+  height: 80px;
+
+  align-self: center;
+
+  background: #acd2ce;
+}
+
+
+/* =========================================================
+   OUR TEAM SECTION
+========================================================= */
+
+.team-section {
+  width: 100%;
+  padding: 12px 25px 35px !important;
+}
+
+.team-section .team-container {
+  width: 100% !important;
+  max-width: 1280px !important;
+
+  /* INCREASED HEIGHT */
+  min-height: 240px !important;
+  height: 240px !important;
+
+  margin: 0 auto !important;
+
+  display: grid !important;
+
+  /*
+     Text | Image | Quote
+  */
+  grid-template-columns: 27% 46% 27% !important;
+
+  align-items: stretch !important;
+
+  background: #f0faf8 !important;
+
+  border-radius: 16px !important;
+
+  overflow: hidden !important;
+}
+
+
+/* =========================================================
+   TEAM TEXT
+========================================================= */
+
+.team-section .team-content {
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+
+  padding: 30px 35px !important;
+}
+
+.team-section .team-content h2 {
+  margin: 0 0 12px !important;
+
+  color: #075e59 !important;
+
+  font-size: 25px !important;
+
+  font-weight: 700 !important;
+}
+
+.team-section .team-content p {
+  margin: 0 !important;
+
+  color: #304950 !important;
+
+  font-size: 16px !important;
+
+  line-height: 1.65 !important;
+}
+
+
+/* =========================================================
+   TEAM IMAGE
+========================================================= */
+
+.team-section .team-image {
+  width: 100% !important;
+
+  /* SAME HEIGHT AS BOX */
+  height: 240px !important;
+
+  overflow: hidden !important;
+
+  display: block !important;
+
+  background: #eef8f7 !important;
+}
+
+.team-section .team-image img {
+  width: 100% !important;
+
+  height: 100% !important;
+
+  display: block !important;
+
+  /*
+     Fill the complete image area
+  */
+  object-fit: cover !important;
+
+  /*
+     Keeps the people visible
+  */
+  object-position: center center !important;
+}
+
+
+/* =========================================================
+   TEAM QUOTE
+========================================================= */
+
+.team-section .team-quote {
+  width: 100% !important;
+
+  position: relative !important;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  justify-content: center !important;
+
+  padding: 30px 30px 30px 75px !important;
+}
+
+.team-section .quote-mark {
+  position: absolute !important;
+
+  left: 25px !important;
+
+  top: 28px !important;
+
+  color: #087d71 !important;
+
+  font-size: 60px !important;
+
+  line-height: 1 !important;
+
+  font-weight: 700 !important;
+}
+
+.team-section .team-quote p {
+  margin: 0 0 12px !important;
+
+  color: #304950 !important;
+
+  font-size: 16px !important;
+
+  line-height: 1.6 !important;
+}
+
+.team-section .team-quote strong {
+  color: #08776d !important;
+
+  font-size: 16px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .team-section .team-container {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-section .team-content {
+    text-align: center;
+
+    align-items: center;
+
+    padding: 30px 25px !important;
+  }
+
+  .team-section .team-content h2 {
+    font-size: 23px !important;
+  }
+
+  .team-section .team-content p {
+    font-size: 15px !important;
+  }
+
+  .team-section .team-image {
+    height: 280px !important;
+  }
+
+  .team-section .team-quote {
+    text-align: center;
+
+    align-items: center;
+
+    padding: 35px 40px 35px 70px !important;
+  }
+
+  .team-section .team-quote p {
+    font-size: 15px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .team-section {
+    padding: 5px 12px 20px !important;
+  }
+
+  .team-section .team-container {
+    width: 100% !important;
+
+    border-radius: 14px !important;
+  }
+
+  .team-section .team-content {
+    padding: 25px 18px !important;
+  }
+
+  .team-section .team-content h2 {
+    font-size: 20px !important;
+  }
+
+  .team-section .team-content p {
+    font-size: 13px !important;
+
+    line-height: 1.6 !important;
+  }
+
+  .team-section .team-image {
+    height: 210px !important;
+  }
+
+  .team-section .team-image img {
+    object-fit: cover !important;
+
+    object-position: center center !important;
+  }
+
+  .team-section .team-quote {
+    padding: 30px 18px 30px 55px !important;
+  }
+
+  .team-section .quote-mark {
+    left: 15px !important;
+
+    top: 18px !important;
+
+    font-size: 45px !important;
+  }
+
+  .team-section .team-quote p {
+    font-size: 13px !important;
+  }
+
+  .team-section .team-quote strong {
+    font-size: 13px !important;
+  }
+}
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .about-container {
+    grid-template-columns: 47% 53%;
+  }
+
+  .about-hero-content {
+    padding-left: 30px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 48px;
+  }
+
+  .about-hero-content h1 span {
+    font-size: 36px;
+  }
+
+  .about-hero-content h2 {
+    font-size: 23px;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-features {
+    gap: 18px;
+  }
+
+  .mission-vision-container {
+    grid-template-columns: 1fr 320px 1fr;
+  }
+
+  .mission-box,
+  .vision-box {
+    padding: 22px;
+    gap: 14px;
+  }
+
+  .mission-icon,
+  .vision-icon {
+    min-width: 55px;
+    width: 55px;
+    height: 55px;
+
+    font-size: 28px;
+  }
+
+  .mission-content h3,
+  .vision-content h3 {
+    font-size: 19px;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: 13px;
+  }
+
+  .stat-item h3 {
+    font-size: 21px;
+  }
+
+  .stat-item p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  /* HERO */
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content {
+    padding: 35px 30px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 46px;
+  }
+
+  .about-hero-content h2 {
+    font-size: 23px;
+  }
+
+  .about-hero-content p {
+    max-width: 700px;
+
+    font-size: 16px;
+  }
+
+  .about-hero-image {
+    min-height: 320px;
+  }
+
+  .about-hero-image img {
+    min-height: 320px;
+  }
+
+
+  /* STATS */
+
+  .stats-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    padding: 22px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-item {
+    justify-content: flex-start;
+  }
+
+
+  /* MISSION */
+
+  .mission-vision-container {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .mission-image {
+    height: 260px;
+  }
+
+  .mission-image img {
+    min-height: 260px;
+  }
+
+
+  /* WHY */
+
+  .why-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why-divider {
+    display: none;
+  }
+
+
+  /* TEAM */
+
+  .team-section .team-container {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-section .team-content {
+    text-align: center;
+
+    align-items: center;
+
+    padding: 25px !important;
+  }
+
+  .team-section .team-image {
+    height: 250px !important;
+  }
+
+  .team-section .team-image img {
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+  .team-section .team-quote {
+    text-align: center;
+
+    align-items: center;
+
+    padding: 30px 40px 30px 70px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-page {
+    width: 100%;
+  }
+
+
+  /* HERO */
+
+  .about-hero-content {
+    padding: 25px 18px 30px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 15px;
+
+    font-size: 12px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .about-hero-content h1 span {
+    font-size: 28px;
+  }
+
+  .about-hero-content h2 {
+    font-size: 20px;
+
+    margin: 10px 0 12px;
+  }
+
+  .about-hero-content p {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+
+  /* FEATURES */
+
+  .hero-features {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 18px;
+  }
+
+  .hero-feature {
+    gap: 6px;
+  }
+
+  .feature-icon {
+    font-size: 21px;
+  }
+
+  .hero-feature strong {
+    font-size: 12px;
+  }
+
+  .hero-feature span {
+    font-size: 10px;
+  }
+
+
+  /* HERO IMAGE */
+
+  .about-hero-image {
+    min-height: 230px;
+  }
+
+  .about-hero-image img {
+    min-height: 230px;
+  }
+
+
+  /* STATS */
+
+  .stats-section {
+    padding: 10px 12px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px 10px;
+
+    gap: 22px 8px;
+  }
+
+  .stat-item {
+    justify-content: flex-start;
+
+    padding-left: 10px;
+
+    gap: 8px;
+  }
+
+  .stat-icon {
+    font-size: 28px;
+  }
+
+  .stat-item h3 {
+    font-size: 18px;
+  }
+
+  .stat-item p {
+    font-size: 11px;
+  }
+
+
+  /* MISSION */
+
+  .mission-vision-section {
+    padding: 5px 12px 10px;
+  }
+
+  .mission-box,
+  .vision-box {
+    padding: 20px 15px;
+  }
+
+  .mission-icon,
+  .vision-icon {
+    min-width: 50px;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 25px;
+  }
+
+  .mission-content h3,
+  .vision-content h3 {
+    font-size: 18px;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: 12.5px;
+
+    line-height: 1.6;
+  }
+
+  .mission-image {
+    height: 190px;
+  }
+
+  .mission-image img {
+    min-height: 190px;
+  }
+
+
+  /* WHY */
+
+  .why-section {
+    padding: 5px 12px 15px;
+  }
+
+  .section-heading h2 {
+    font-size: 21px;
+  }
+
+  .why-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 5px;
+  }
+
+  .why-item {
+    padding: 12px 8px;
+  }
+
+  .why-icon {
+    font-size: 29px;
+  }
+
+  .why-item h3 {
+    font-size: 14px;
+  }
+
+  .why-item p {
+    font-size: 11px;
+  }
+
+
+  /* TEAM */
+
+  .team-section {
+    padding: 0 12px 15px !important;
+  }
+
+  .team-section .team-content {
+    padding: 20px !important;
+  }
+
+  .team-section .team-content h2 {
+    font-size: 18px !important;
+  }
+
+  .team-section .team-content p {
+    font-size: 12px !important;
+  }
+
+  .team-section .team-image {
+    height: 180px !important;
+  }
+
+  .team-section .team-quote {
+    padding: 20px 15px 20px 55px !important;
+  }
+
+  .team-section .quote-mark {
+    left: 15px !important;
+
+    top: 13px !important;
+
+    font-size: 45px !important;
+  }
+
+  .team-section .team-quote p {
+    font-size: 12px !important;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .about-hero-content h1 {
+    font-size: 33px;
+  }
+
+  .about-hero-content h2 {
+    font-size: 18px;
+  }
+
+  .about-hero-content p {
+    font-size: 13px;
+  }
+
+  .hero-features {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px 5px;
+  }
+
+  .hero-feature strong {
+    font-size: 11px;
+  }
+
+  .hero-feature span {
+    font-size: 9px;
+  }
+
+
+  .stats-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-item {
+    padding-left: 5px;
+  }
+
+  .stat-item h3 {
+    font-size: 16px;
+  }
+
+
+  .why-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
